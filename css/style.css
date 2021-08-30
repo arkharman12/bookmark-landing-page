@@ -1,0 +1,116 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@400;500&display=swap");
+*, *::before, *::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Rubik', sans-serif;
+  font-size: 18px;
+}
+
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.hero .hero__nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 50px;
+}
+
+.hero .hero__nav ul.hero__links {
+  display: flex;
+  align-items: center;
+  font-size: 15px;
+}
+
+.hero .hero__nav ul.hero__links li {
+  list-style: none;
+  margin-left: 35px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.hero .hero__nav ul.hero__links li a {
+  text-decoration: none;
+  color: #252b46;
+}
+
+.hero .hero__nav ul.hero__links button {
+  cursor: pointer;
+  font-size: 15px;
+  color: #fff;
+  text-align: center;
+  text-transform: uppercase;
+  padding: 15px 43px;
+  margin-left: 35px;
+  background-color: #fa5757;
+  border: none;
+  border-radius: 5px;
+  letter-spacing: 1px;
+  box-shadow: rgba(83, 104, 223, 0.2) 0px 8px 24px;
+}
+
+.hero .hero__content {
+  display: flex;
+  align-items: center;
+}
+
+.hero .hero__content .hero__text {
+  margin-right: 20px;
+}
+
+.hero .hero__content .hero__text .hero__heading {
+  font-size: 44px;
+  margin-bottom: 30px;
+}
+
+.hero .hero__content .hero__text .hero__sub-heading {
+  color: #9194a1;
+  margin-bottom: 50px;
+}
+
+.hero .hero__content .hero__text .hero__ctas .hero__chrome-cta, .hero .hero__content .hero__text .hero__ctas .hero__firefox-cta {
+  cursor: pointer;
+  font-size: 14px;
+  text-align: center;
+  text-decoration: none;
+  padding: 15px 25px;
+  border: none;
+  border-radius: 5px;
+  box-shadow: rgba(83, 104, 223, 0.2) 0px 8px 24px;
+}
+
+.hero .hero__content .hero__text .hero__ctas .hero__chrome-cta {
+  color: #fff;
+  background-color: #5368df;
+}
+
+.hero .hero__content .hero__text .hero__ctas .hero__firefox-cta {
+  color: #252b46;
+  background-color: rgba(145, 148, 161, 0.1);
+  margin-left: 10px;
+}
+
+.hero .hero__content .hero__img {
+  margin-top: 100px;
+  height: 100%;
+  width: 50%;
+}
+
+.hero .hero__content .hero__img::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 55%;
+  background-color: #5368df;
+  border-radius: 1000px 0 0 1000px;
+  top: 50%;
+  left: 68%;
+  z-index: -1;
+}
