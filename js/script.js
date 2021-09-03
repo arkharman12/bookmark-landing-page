@@ -44,5 +44,42 @@ for(i=0;i<questions.length; i++) {
         }
         
     });
-    
 }
+
+// Email validation
+const emailInput = document.querySelector("#email");
+const submitBtn = document.querySelector("#submit-btn");
+const errorMsg = document.querySelector("#error-message");
+const successMsg = document.querySelector("#success-message");
+const errorIcon = document.querySelector("#error-icon");
+
+submitBtn.addEventListener("click", function(e) {
+    e.preventDefault();
+    let inputValue = emailInput.value;
+    let error = "";
+    let success = "";
+    let mailFormat = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+
+    if (inputValue.match(mailFormat)) {
+        success = "Success!";
+        errorIcon.style.display = "none";
+        emailInput.style.border = "2px solid transparent";
+    } else if (inputValue === "") {
+        error = "Whoops, make sure it's an email";
+        errorIcon.style.display = "block";
+        emailInput.style.borderTop = "2px solid hsl(0, 94%, 66%)";
+        emailInput.style.borderRight = "2px solid hsl(0, 94%, 66%)";
+        emailInput.style.borderBottom = "2px solid hsl(0, 94%, 66%)";
+        emailInput.style.borderLeft = "2px solid hsl(0, 94%, 66%)";
+    } else {
+        error = "Whoops, make sure it's an email";
+        errorIcon.style.display = "block";
+        emailInput.style.borderTop = "2px solid hsl(0, 94%, 66%)";
+        emailInput.style.borderRight = "2px solid hsl(0, 94%, 66%)";
+        emailInput.style.borderBottom = "2px solid hsl(0, 94%, 66%)";
+        emailInput.style.borderLeft = "2px solid hsl(0, 94%, 66%)";
+    }
+    
+    successMsg.innerHTML = success;
+    errorMsg.innerHTML = error;
+})

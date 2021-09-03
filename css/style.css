@@ -6091,43 +6091,47 @@ readers do not read off random characters that represent icons */
 body {
   font-family: 'Rubik', sans-serif;
   font-size: 18px;
+  width: 100%;
+  height: 100%;
+  border: 2px solid red;
 }
 
 .container {
-  max-width: 1100px;
+  max-width: 1150px;
+  height: 100%;
   margin: 0 auto;
 }
 
-.hero .hero__nav {
+.hero__nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding-top: 50px;
 }
 
-.hero .hero__nav ul.hero__links {
+.hero__nav ul.hero__links {
   display: flex;
   align-items: center;
   font-size: 15px;
 }
 
-.hero .hero__nav ul.hero__links li {
+.hero__nav ul.hero__links li {
   list-style: none;
   margin-left: 35px;
   text-transform: uppercase;
   letter-spacing: 1px;
 }
 
-.hero .hero__nav ul.hero__links li a {
+.hero__nav ul.hero__links li a {
   text-decoration: none;
   color: #252b46;
 }
 
-.hero .hero__nav ul.hero__links li a:hover {
+.hero__nav ul.hero__links li a:hover {
   color: #fa5757;
 }
 
-.hero .hero__nav ul.hero__links button {
+.hero__nav ul.hero__links button {
   cursor: pointer;
   font-size: 15px;
   color: #fff;
@@ -6142,34 +6146,36 @@ body {
   box-shadow: rgba(83, 104, 223, 0.2) 0px 8px 24px;
 }
 
-.hero .hero__nav ul.hero__links button:hover {
+.hero__nav ul.hero__links button:hover {
   background-color: transparent;
   color: #fa5757;
   border: 2px solid #fa5757;
 }
 
-.hero .hero__content {
+.hero__content {
   display: flex;
   align-items: center;
+  border: 2px solid red;
+  position: relative;
 }
 
-.hero .hero__content .hero__text {
+.hero__content .hero__text {
   margin-right: 20px;
 }
 
-.hero .hero__content .hero__text .hero__heading {
+.hero__content .hero__text .hero__heading {
   font-size: 44px;
   margin-bottom: 30px;
   font-weight: 500;
 }
 
-.hero .hero__content .hero__text .hero__sub-heading {
+.hero__content .hero__text .hero__sub-heading {
   color: #9194a1;
   margin-bottom: 50px;
   line-height: 1.5;
 }
 
-.hero .hero__content .hero__text .hero__ctas .hero__chrome-cta, .hero .hero__content .hero__text .hero__ctas .hero__firefox-cta {
+.hero__content .hero__text .hero__ctas .hero__chrome-cta, .hero__content .hero__text .hero__ctas .hero__firefox-cta {
   cursor: pointer;
   font-size: 15px;
   text-align: center;
@@ -6180,37 +6186,36 @@ body {
   box-shadow: rgba(83, 104, 223, 0.2) 0px 8px 24px;
 }
 
-.hero .hero__content .hero__text .hero__ctas .hero__chrome-cta {
+.hero__content .hero__text .hero__ctas .hero__chrome-cta {
   color: #fff;
   background-color: #5368df;
 }
 
-.hero .hero__content .hero__text .hero__ctas .hero__chrome-cta:hover {
+.hero__content .hero__text .hero__ctas .hero__chrome-cta:hover {
   color: #5368df;
   background-color: #fff;
   border: 2px solid #5368df;
 }
 
-.hero .hero__content .hero__text .hero__ctas .hero__firefox-cta {
+.hero__content .hero__text .hero__ctas .hero__firefox-cta {
   color: #252b46;
   background-color: rgba(145, 148, 161, 0.1);
   margin-left: 10px;
 }
 
-.hero .hero__content .hero__text .hero__ctas .hero__firefox-cta:hover {
+.hero__content .hero__text .hero__ctas .hero__firefox-cta:hover {
   color: #252b46;
   background-color: #fff;
   border: 2px solid #252b46;
 }
 
-.hero .hero__content .hero__img {
+.hero__content .hero__img {
   margin-top: 100px;
   height: 100%;
   width: 50%;
-  position: relative;
 }
 
-.hero .hero__content .hero__img::before {
+.hero__content .hero__img::before {
   content: "";
   position: absolute;
   width: 100%;
@@ -6218,7 +6223,7 @@ body {
   background-color: #5368df;
   border-radius: 1000px 0 0 1000px;
   top: 30%;
-  left: 37%;
+  left: 63%;
   z-index: -1;
 }
 
@@ -6279,6 +6284,7 @@ body {
   align-items: center;
   margin-top: 60px;
   position: relative;
+  border: 2px solid red;
 }
 
 .features .tab-content .simple__content .simple__text, .features .tab-content .simple__content .speedy__text, .features .tab-content .simple__content .easy__text, .features .tab-content .speedy__content .simple__text, .features .tab-content .speedy__content .speedy__text, .features .tab-content .speedy__content .easy__text, .features .tab-content .easy__content .simple__text, .features .tab-content .easy__content .speedy__text, .features .tab-content .easy__content .easy__text {
@@ -6476,19 +6482,19 @@ body {
 }
 
 .faq .accordion-wrapper button.accordion::after {
-  content: url("../images/icon-arrow.svg");
+  content: url("../images/icon-arrow-blue.svg");
   float: right;
   font-weight: 400;
 }
 
 .faq .accordion-wrapper button.accordion.active::after {
-  content: url("../images/icon-arrow.svg");
+  content: url("../images/icon-arrow-red.svg");
   transition: transform 0.2s linear;
   transform: rotate(180deg);
 }
 
 .faq .accordion-wrapper button.accordion:not(active)::after {
-  content: url("../images/icon-arrow.svg");
+  content: url("../images/icon-arrow-blue.svg");
   transition: transform 0.2s linear;
   transform: rotate(0deg);
 }
@@ -6498,8 +6504,7 @@ body {
 }
 
 .faq .accordion-wrapper button.accordion.active {
-  color: #5368df;
-  font-weight: 700;
+  color: #252b46;
 }
 
 .faq .accordion-wrapper .accordion-content {
@@ -6512,6 +6517,7 @@ body {
 .faq .accordion-wrapper .accordion-content p {
   color: #9194a1;
   padding-bottom: 15px;
+  line-height: 1.5;
 }
 
 .faq .accordion-wrapper hr {
@@ -6562,34 +6568,69 @@ body {
   align-items: center;
 }
 
-.contact .contact__input-btn input {
+.contact .contact__input-btn .form {
+  position: relative;
+}
+
+.contact .contact__input-btn .form input {
+  font-family: 'Rubik', sans-serif;
   width: 270px;
   height: 40px;
-  padding: 22px 15px 22px 15px;
+  padding: 24px 15px 24px 15px;
   border-radius: 5px;
   outline: none;
-  border: none;
+  border: 2px solid transparent;
   margin-right: 12px;
 }
 
-.contact .contact__input-btn input:focus {
+.contact .contact__input-btn .form input:focus {
+  border: 2px solid transparent;
   outline: none;
   border: none;
 }
 
-.contact .contact__input-btn input::placeholder {
+.contact .contact__input-btn .form input::placeholder {
   color: #9194a1;
 }
 
-.contact .contact__input-btn button {
+.contact .contact__input-btn .form #error-icon {
+  display: none;
+  position: absolute;
+  right: 37%;
+  top: 30%;
+}
+
+.contact .contact__input-btn .form button {
   cursor: pointer;
   font-size: 15px;
   text-align: center;
   text-decoration: none;
   background-color: #fa5757;
   padding: 14px 20px;
-  border: none;
+  border: 2px solid transparent;
   border-radius: 5px;
+  color: #fff;
+}
+
+.contact .contact__input-btn .form button:hover {
+  color: #fa5757;
+  border: 2px solid #fa5757;
+  background-color: #fff;
+}
+
+.contact span#error-message {
+  position: absolute;
+  left: 32%;
+  font-size: 11px;
+  margin: 10px 0 0 20px;
+  color: #fa5757;
+}
+
+.contact span#success-message {
+  position: absolute;
+  left: 32%;
+  font-size: 11px;
+  margin: 10px 0 0 20px;
   color: #fff;
 }
 
@@ -6611,16 +6652,16 @@ body {
   align-items: center;
 }
 
-.footer .footer__container .footer__links img {
-  color: #fff;
-}
-
 .footer .footer__container .footer__links a {
   color: #fff;
   text-decoration: none;
   margin-left: 45px;
   text-transform: uppercase;
   font-size: 14px;
+}
+
+.footer .footer__container .footer__links a:hover {
+  color: #fa5757;
 }
 
 .footer .footer__container .footer__socials {
@@ -6630,4 +6671,9 @@ body {
 
 .footer .footer__container .footer__socials img {
   margin-left: 35px;
+}
+
+.footer .footer__container .footer__socials img:hover {
+  cursor: pointer;
+  filter: invert(55%) sepia(39%) saturate(7076%) hue-rotate(330deg) brightness(104%) contrast(96%);
 }

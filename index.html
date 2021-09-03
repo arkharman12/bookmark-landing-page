@@ -53,7 +53,7 @@
 
           <div id="simple" data-tab-content class="active">
             <div class="simple__content">
-              <img src="./images/illustration-features-tab-1.svg" alt="" aria-hidden="true">
+                <img src="./images/illustration-features-tab-1.svg" alt="" aria-hidden="true">
               <div class="simple__text">
                 <p class="simple__heading">Bookmark in one click</p>
                 <p class="simple__sub-heading">Organize your bookmarks however you like. Our simple drag-and-drop interface 
@@ -173,9 +173,14 @@
       <p class="contact__numbers">35,000+ already joined</p> 
       <p class="contact__update">Stay up-to-date with what we’re doing</p> 
       <div class="contact__input-btn">
-        <input type="email" placeholder="Enter your email address">
-        <button>Contact Us</button>
+        <form class="form">
+          <input id="email" type="email" placeholder="Enter your email address">
+          <img id="error-icon" src="./images/icon-error.svg" alt="Error icon">
+          <button id="submit-btn" type="submit">Contact Us</button>
+        </form>
       </div>
+      <span id="error-message"></span>
+      <span id="success-message"></span>
     </section>
     <!-- section .contact ends -->
 
