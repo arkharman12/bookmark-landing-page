@@ -83,3 +83,32 @@ submitBtn.addEventListener("click", function(e) {
     successMsg.innerHTML = success;
     errorMsg.innerHTML = error;
 })
+
+// Hamburger menu
+const hamIcon = document.getElementById("ham-menu");
+const myNavigation = document.getElementById("close-btn");
+
+hamIcon.addEventListener("click", function() {
+    document.getElementById("my-nav").style.display = "block";
+    document.body.style.position = "fixed";
+    
+    (function() {
+        window.onresize = displayWindowSize;
+        window.onload = displayWindowSize;
+        
+        function displayWindowSize() {
+            let myWidth = window.innerWidth;
+            
+            if (myWidth >= 710) {
+                document.getElementById("my-nav").style.display = "none";
+                document.body.style.position = "static";
+            }
+            
+        }
+    })();  
+});
+
+myNavigation.addEventListener("click", function() {
+    document.getElementById("my-nav").style.display = "none";
+    document.body.style.position = "static";
+});
