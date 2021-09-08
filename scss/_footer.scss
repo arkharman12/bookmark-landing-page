@@ -1,0 +1,44 @@
+// Footer styles
+.footer {
+    background-color: $very-dark-blue;
+    
+    .footer__container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        max-width: 1100px;
+        padding: 25px 0;
+        margin: 0 auto;
+
+        .footer__links {
+            display: flex;
+            align-items: center;
+    
+            a { 
+                color: #fff;
+                text-decoration: none;
+                margin-left: 45px;
+                text-transform: uppercase;
+                font-size: 14px;
+            }
+
+            a:hover {
+                color: $soft-red;
+            }
+        }
+
+        .footer__socials {
+            display: flex;
+            align-items: center;
+
+            img {
+                margin-left: 35px;
+            }
+
+            img:hover {
+                cursor: pointer;
+                filter: invert(55%) sepia(39%) saturate(7076%) hue-rotate(330deg) brightness(104%) contrast(96%);
+            }
+        }
+    }
+}

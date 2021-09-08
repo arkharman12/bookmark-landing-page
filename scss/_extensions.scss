@@ -1,0 +1,89 @@
+// Extensions styles
+.extensions {
+    margin-top: 230px;
+
+    .extensions__heading {
+        text-align: center;
+        font-size: 36px;
+        margin-bottom: 25px;
+        font-weight: 500;
+    }
+
+    .extensions__sub-heading {
+        text-align: center;
+        font-size: 18px;
+        margin: 0 auto 0px auto;
+        max-width: 50%;
+        color: $grayish-blue;
+        line-height: 1.5;
+    }
+
+    .extensions__cards {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 25px;
+
+        .extensions__card {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background-color: #fff;
+            padding: 35px 10px 10px 10px;
+            width: 250px;
+            height: 350px;
+            border-radius: 10px;
+            box-shadow: hsla(231, 69%, 60%, 0.2) 0px 8px 24px;
+
+            img {
+                width: 100px;
+                height: 100px;
+            }
+
+            .extensions__card-heading {
+                margin-top: 20px;
+            }
+
+            .extensions__card-sub-heading {
+                font-size: 13px;
+                margin-top: 10px;
+                color: $grayish-blue;
+            }
+
+            img.dots {
+                width: 100%;
+                height: auto;
+                margin-top: 50px;
+            }
+
+            .extensions__card-cta {
+                font-family: "Rubik", sans-serif;
+                cursor: pointer;
+                font-size: 15px;
+                text-align: center;
+                text-decoration: none;
+                background-color: $soft-blue;
+                padding: 15px 20px;
+                margin-top: 25px;
+                border: 2px solid transparent;
+                border-radius: 5px;
+                box-shadow: hsla(231, 69%, 60%, 0.2) 0px 8px 24px;
+                color: #fff;
+            }
+
+            .extensions__card-cta:hover {
+                color: $soft-blue;
+                border: 2px solid $soft-blue;
+                background-color: transparent;
+            }
+        }
+
+        .extensions__card.firefox {
+            margin-top: 50px;
+        }
+
+        .extensions__card.opera {
+            margin-top: 100px;
+        }
+    }
+}

@@ -1,0 +1,101 @@
+
+// FAQ styles
+.faq {
+    margin-top: 180px;
+    margin-bottom: 150px;
+
+    .faq__heading {
+        text-align: center;
+        font-size: 36px;
+        margin-bottom: 25px;
+        font-weight: 500;
+    }
+
+    .faq__sub-heading {
+        text-align: center;
+        font-size: 18px;
+        margin: 0 auto 0px auto;
+        max-width: 50%;
+        color: $grayish-blue;
+        line-height: 1.5;
+    }
+
+    .accordion-wrapper {
+        width: 55%;
+        margin: 50px auto 0 auto;
+
+        button.accordion {
+            font-family: 'Rubik', sans-serif;
+            font-size: 18px;
+            width: 100%;
+            background-color: transparent;
+            border: none;
+            outline: none;
+            text-align: left;
+            padding: 15px 15px 15px 0;
+            color: $very-dark-blue;
+            cursor: pointer;
+            transition: background-color 0.2s linear;
+        }
+
+        button.accordion::after {
+            content: url("../images/icon-arrow-blue.svg");
+            float: right;
+            font-weight: 400;
+        }
+
+        button.accordion.active::after {
+            content: url("../images/icon-arrow-red.svg");
+            transition: transform 0.2s linear;
+            transform: rotate(180deg);
+        }
+        button.accordion:not(active)::after {
+            content: url("../images/icon-arrow-blue.svg");
+            transition: transform 0.2s linear;
+            transform: rotate(0deg);
+        }
+        
+        button.accordion:hover {
+            color: $soft-red;
+        }
+
+        button.accordion.active {
+            color: $very-dark-blue;
+        }
+
+        .accordion-content {
+            background-color: transparent;
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.2s ease-in-out;
+
+            p {
+                color: $grayish-blue;
+                padding-bottom: 15px;
+                line-height: 1.5;
+            }
+        }
+
+        hr {
+            border: 1px solid hsla(229, 8%, 60%, 0.2);
+        }
+
+        .faq__cta {
+            text-align: center;
+            margin-top: 65px;
+    
+            a {
+                cursor: pointer;
+                font-size: 15px;
+                text-align: center;
+                text-decoration: none;
+                background-color: $soft-blue;
+                padding: 15px 20px;
+                border: none;
+                border-radius: 5px;
+                box-shadow: hsla(231, 69%, 60%, 0.2) 0px 8px 24px;
+                color: #fff;
+            }
+        }
+    }
+}

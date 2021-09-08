@@ -1,0 +1,131 @@
+// Hero navbar styles
+.hero__nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 50px;
+
+    ul.hero__links {
+        display: flex;
+        align-items: center;
+        font-size: 15px;
+
+        li {
+            list-style: none;
+            margin-left: 35px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            
+            a {
+                text-decoration: none;
+                color: $very-dark-blue;
+            }
+            
+            a:hover {
+                color: $soft-red;
+            }
+        }
+
+        
+        button {
+            cursor: pointer;
+            font-size: 15px;
+            color: #fff;
+            text-align: center;
+            text-transform: uppercase;
+            padding: 12px 35px;
+            margin-left: 35px;
+            background-color: $soft-red;
+            border: 2px solid transparent;
+            border-radius: 5px;
+            letter-spacing: 1px;
+            box-shadow: hsla(231, 69%, 60%, 0.2) 0px 8px 24px;
+        }
+
+        button:hover {
+            background-color: transparent;
+            color: $soft-red;
+            border: 2px solid $soft-red;
+        }
+    }
+
+    .ham-menu {
+        display: none;
+    }
+
+    #my-nav {
+        display: none;
+    }
+
+    /* Hamburger menu */
+    .nav-overlay {
+        height: 100%;
+        width: 100%;
+        display: none;
+        position: fixed;
+        z-index: 1;
+        top: 0;
+        left: 0;
+        background-color: rgba(37, 43, 70, 0.97);
+        
+        .overlay-content {
+            // display: block;
+            font-family: "Rubik", sans-serif;
+            position: relative;
+            width: 100%;
+            text-align: center;
+            margin-top: 120px;
+            font-size: 24px;
+            text-transform: uppercase;
+
+            a {
+                margin: 20px 0;
+                letter-spacing: 2px;
+                font-weight: 400;
+            }
+
+            a.login {
+                border: 2px solid #fff;
+                width: 80%;
+                padding: 10px 0;
+                margin: 20px auto 25vh auto;
+                border-radius: 5px;
+            }
+
+            hr {
+                width: 80%;
+                margin: 0 auto;
+                opacity: 0.2;
+            }
+
+            .ham-socials {
+                img {
+                    cursor: pointer;
+                    margin-left: 30px;
+                    text-align: center;
+                }
+            }
+
+        }
+        
+        a, #close-btn {
+            cursor: pointer;
+            padding: 8px;
+            text-decoration: none;
+            color: #fff;
+            display: block;
+        }
+    
+        #close-btn {
+            position: absolute;
+            top: 5.8%;
+            right: 4%;
+        }
+    
+        #overlay-logo {
+            position: absolute;
+            top: 5.8%;
+            left: 6%;
+        }
+    }
+}

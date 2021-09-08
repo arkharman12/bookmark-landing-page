@@ -6662,7 +6662,6 @@ body {
 .contact .contact__input-btn .form input:focus {
   border: 2px solid transparent;
   outline: none;
-  border: none;
 }
 
 .contact .contact__input-btn .form input::placeholder {

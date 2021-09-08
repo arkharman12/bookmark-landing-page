@@ -1,0 +1,92 @@
+// Contact styles
+.contact {
+    background-color: $soft-blue;
+    padding: 60px 0 50px 0;
+    text-align: center;
+
+    .contact__numbers {
+        font-size: 15px;
+        text-transform: uppercase;
+        letter-spacing: 2.5px;
+        color: #fff;
+    }
+    
+    .contact__update {
+        font-size: 30px;
+        padding: 0 400px 0 400px;
+        margin: 30px 0 30px 0;
+        color: #fff;
+    }
+
+    .contact__input-btn {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        .form {
+            position: relative;
+
+            input {
+                font-family: 'Rubik', sans-serif;
+                width: 270px;
+                height: 40px;
+                padding: 24px 15px 24px 15px;
+                border-radius: 5px;
+                outline: none;
+                border: 2px solid transparent;
+                margin-right: 12px;
+            }
+            
+            input:focus {
+                border: 2px solid transparent;
+                outline: none;
+            }
+            
+            input::placeholder {
+                color: $grayish-blue;
+            }
+
+            #error-icon {
+                display: none;
+                position: absolute;
+                right: 37%;
+                top: 30%;
+            }
+    
+            button {
+                cursor: pointer;
+                font-size: 15px;
+                text-align: center;
+                text-decoration: none;
+                background-color: $soft-red;
+                padding: 14px 20px;
+                border: 2px solid transparent;
+                border-radius: 5px;
+                color: #fff;
+            }
+    
+            button:hover {
+                color: $soft-red;
+                border: 2px solid $soft-red;
+                background-color: #fff;
+            }
+        }
+    }
+
+    span#error-message {
+        position: absolute;
+        left: 32%;
+        font-size: 11px;
+        margin: 10px 0 0 20px;
+        color: $soft-red;
+    }
+    
+    span#success-message {
+        position: absolute;
+        left: 32%;
+        font-size: 11px;
+        margin: 10px 0 0 20px;
+        color: #fff;
+    }
+}
+
